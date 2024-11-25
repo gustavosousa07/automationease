@@ -5,7 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Corpo e fundo */
 body {
     background: #0A7A85;
     color: #fff;
@@ -35,28 +34,13 @@ nav {
     width: auto;
 }
 
-/* Menu */
-/* Menu oculto por padrão */
 nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    width: 100%;
-    background-color: #ffffff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    display: flex; /* Para telas grandes */
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
-/* Menu visível quando ativo */
-nav ul.active {
-    display: flex;
-}
-
 
 nav ul li {
     position: relative; /* Necessário para o efeito sublinhado */
@@ -226,7 +210,6 @@ button.next:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-/* Rodapé */
 footer {
     background-color: #004D56;
     color: #ffffff;
@@ -309,7 +292,27 @@ footer {
     .menu-toggle {
         display: flex; /* Mostra o ícone hambúrguer */
     }
-}
+
+    nav ul {
+        display: none; /* Ocultar por padrão */
+    }
+
+    nav ul.active {
+        display: flex; /* Mostrar quando ativo */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
 
 /* Efeito de hover no menu hambúrguer */
 .menu-toggle:hover .bar {
@@ -349,7 +352,7 @@ footer {
         width: 30px;
         height: 30px;
     }
-
+}
 
 @media (max-width: 480px) {
     /* Ajustes adicionais para telas menores */
