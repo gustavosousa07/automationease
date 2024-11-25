@@ -24,22 +24,6 @@ Fale Conosco:
 Formulário de contato para dúvidas e mensagens.
 Campos para inserir nome, e-mail e mensagem.
 
-## Estrutura de Pastas
-
-```plaintext
-/automation-ease
-│
-├── index.html            # Página inicial
-├── time.html             # Página sobre a equipe
-├── orcamento.html        # Página de orçamento
-├── contato.html          # Página de contato
-├── style.css             # Arquivo de estilo CSS
-├── script.js             # Arquivo JavaScript para funcionalidades
-├── logo.png              # Logo da empresa
-├── favicon.ico           # Ícone do site
-└── README.md             # Este arquivo
-
-
 ## Como Rodar o Projeto Localmente
 Para rodar este projeto localmente, siga os passos abaixo:
 
@@ -60,3 +44,18 @@ Abra um Pull Request para revisar suas alterações.
 
 ## Licença
 Este projeto é de código aberto e disponível sob a Licença MIT.
+
+## Estrutura de Pastas
+
+```plaintext
+/automation-ease
+│
+├── index.html            # Página inicial
+├── time.html             # Página sobre a equipe
+├── orcamento.html        # Página de orçamento
+├── contato.html          # Página de contato
+├── style.css             # Arquivo de estilo CSS
+├── script.js             # Arquivo JavaScript para funcionalidades
+├── logo.png              # Logo da empresa
+├── favicon.ico           # Ícone do site
+└── README.md             # Este arquivo 
