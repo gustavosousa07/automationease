@@ -2,6 +2,9 @@ const carouselContainer = document.querySelector('.carousel-container');
 const items = document.querySelectorAll('.carousel-item');
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
 
 let currentIndex = 1; // Começa no primeiro item real
 let isTransitioning = false; // Previne múltiplos cliques durante a transição
@@ -55,9 +58,6 @@ carouselContainer.addEventListener('transitionend', handleTransitionEnd);
 window.addEventListener('load', () => {
     updateCarouselPosition();
 });
-
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
