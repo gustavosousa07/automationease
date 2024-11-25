@@ -60,9 +60,16 @@ window.addEventListener('load', () => {
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-// Adicionando um evento de clique no ícone do hambúrguer
+// Adicionando evento de clique no ícone do hambúrguer
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active'); // Alterna a classe "active" no menu
+});
+
+console.log('Menu toggle script carregado!');
+
+menuToggle.addEventListener('click', () => {
+    console.log('Botão de menu clicado!');
+    navLinks.classList.toggle('active');
 });
 
 

@@ -36,11 +36,27 @@ nav {
 }
 
 /* Menu */
+/* Menu oculto por padrão */
 nav ul {
-    display: flex;
-    gap: 32px;
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
+
+/* Menu visível quando ativo */
+nav ul.active {
+    display: flex;
+}
+
 
 nav ul li {
     position: relative; /* Necessário para o efeito sublinhado */
