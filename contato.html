@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="contato.css">
+    <title>Automation Ease</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.png" alt="Automation Ease Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="time.html">Nosso time</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+            </div>
+        </nav>
+    </header>
+
+    <section>
+    <h2>Fale Conosco</h2>
+            <p>Estamos à disposição para responder suas dúvidas. Preencha o formulário abaixo e entraremos em contato em breve!</p>
+            
+            <form action="enviar_mensagem.php" method="POST">
+                <div class="input-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Automation Ease. Todos os direitos reservados.</p>
+            <div class="footer-left">
+                <p>Desenvolvido por <a href="#" class="developer">Gustavo Sousa</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/automationease?igsh=MWw0OXBhYXBqNmdtZw%3D%3D&utm_source=qr" target="_blank">
+                    <i style=" color: #0A7A85;" class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

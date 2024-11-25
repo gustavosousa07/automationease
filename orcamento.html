@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Orçamento - Automation Ease</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.png" alt="Automation Ease Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="time.html">Nosso time</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="budget-section">
+            <h1>Solicite Seu Orçamento</h1>
+            <p>Preencha o formulário abaixo e entraremos em contato com você o mais breve possível.</p>
+            <form class="budget-form" id="budget-form">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Detalhe o que você precisa..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button" onclick="alert('Sua solicitação de orçamento foi enviada com sucesso!')">Enviar Solicitação</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Automation Ease. Todos os direitos reservados.</p>
+            <div class="footer-left">
+                <p>Desenvolvido por <a href="#" class="developer">Gustavo Sousa</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/automationease?igsh=MWw0OXBhYXBqNmdtZw%3D%3D&utm_source=qr" target="_blank">
+                    <i style=" color: #0A7A85;" class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
