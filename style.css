@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo e fundo */
+body {
+    background: #0A7A85;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo-container img {
+    height: 50px;
+    width: auto;
+}
+
+/* Menu */
+nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative; /* Necessário para o efeito sublinhado */
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+    padding-bottom: 3px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0A7A85;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #0A7A85;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* O sublinhado se expande */
+}
+
+nav ul li a:hover {
+    color: #0A7A85; /* Mantém a cor do texto */
+    transform: scale(1.05); /* Um leve aumento para realce */
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #0A7A85;
+    border-radius: 5px;
+}
+
+.titulo-principal{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.carousel {
+    position: relative;
+    margin: 20px auto;
+    max-width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform; /* Melhora a suavidade das transições */
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.about-us {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: #0A7A85;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 80%; /* Igual ao carrossel */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #004D56;
+}
+
+.about-text h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #007F8A;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Rodapé */
+footer {
+    background-color: #004D56;
+    color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.footer-left {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Link do Desenvolvedor */
+.footer-left .developer {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-left .developer:hover {
+    color: #ffff;
+    text-shadow: 5px 5px 10px #1f6f76;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* Link do Instagram */
+.footer-right a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Menu */
+    nav ul {
+        display: none; /* Esconde o menu */
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px; /* Ajuste conforme o tamanho do cabeçalho */
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); /* Começa invisível à esquerda */
+    }
+
+    nav ul.active {
+        transform: translateX(0); /* Menu visível quando a classe "active" for adicionada */
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostra o ícone hambúrguer */
+    }
+}
+
+/* Efeito de hover no menu hambúrguer */
+.menu-toggle:hover .bar {
+    background-color: #007F8A;
+}
+
+/* Efeito de hover no menu hambúrguer */
+.menu-toggle:hover .bar {
+    background-color: #007F8A;
+}
+    /* Título principal */
+    .titulo-principal {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    /* Carrossel */
+    .carousel {
+        max-width: 90%;
+    }
+
+
+
+    /* Rodapé */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-right a {
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+
+@media (max-width: 480px) {
+    /* Ajustes adicionais para telas menores */
+    nav ul li {
+        font-size: 14px;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-container {
+        font-size: 14px;
+    }
+}
