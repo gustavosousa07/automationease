@@ -25,7 +25,20 @@ Formulário de contato para dúvidas e mensagens.
 Campos para inserir nome, e-mail e mensagem.
 
 ## Estrutura de Pastas
-/AutomationEase-Website │ ├── index.html # Página inicial ├── time.html # Página "Nosso Time" ├── orcamento.html # Página de "Orçamento" ├── contato.html # Página "Fale Conosco" ├── style.css # Arquivo CSS com o estilo das páginas ├── script.js # Arquivo JavaScript para interatividade ├── favicon.ico # Ícone do site ├── logo.png # Logo do site ├── enviar_mensagem.php # Backend para o formulário de contato └── README.md # Documento README do projeto
+
+```plaintext
+/automation-ease
+│
+├── index.html            # Página inicial
+├── time.html             # Página sobre a equipe
+├── orcamento.html        # Página de orçamento
+├── contato.html          # Página de contato
+├── style.css             # Arquivo de estilo CSS
+├── script.js             # Arquivo JavaScript para funcionalidades
+├── logo.png              # Logo da empresa
+├── favicon.ico           # Ícone do site
+└── README.md             # Este arquivo
+
 
 ## Como Rodar o Projeto Localmente
 Para rodar este projeto localmente, siga os passos abaixo:
