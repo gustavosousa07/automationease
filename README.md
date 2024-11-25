@@ -1,12 +1,12 @@
-#Automation Ease - Website
+# Automation Ease - Website
 Este é o site da Automation Ease, uma plataforma dedicada à automação de ambientes, desenvolvida com HTML, CSS, e JavaScript. O site oferece informações sobre a empresa, um formulário de contato, orçamento e detalhes sobre a equipe.
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 HTML: Estrutura do conteúdo da página.
 CSS: Estilo e layout do site, incluindo responsividade para dispositivos móveis.
 JavaScript: Funcionalidades interativas como o menu responsivo.
 
-##Funcionalidades
+## Funcionalidades
 Página Inicial (Home):
 
 Informações gerais sobre a empresa e seus serviços.
@@ -24,7 +24,7 @@ Fale Conosco:
 Formulário de contato para dúvidas e mensagens.
 Campos para inserir nome, e-mail e mensagem.
 
-##Estrutura de Pastas
+## Estrutura de Pastas
 /automation-ease
 │
 ├── index.html            # Página inicial
@@ -37,10 +37,10 @@ Campos para inserir nome, e-mail e mensagem.
 ├── favicon.ico           # Ícone do site
 └── README.md             # Este arquivo
 
-##Como Rodar o Projeto Localmente
+## Como Rodar o Projeto Localmente
 Para rodar este projeto localmente, siga os passos abaixo:
 
-##Clone este repositório para sua máquina local:
+## Clone este repositório para sua máquina local:
 git clone https://github.com/seu-usuario/automation-ease.git
 
 Navegue até o diretório do projeto:
@@ -48,12 +48,12 @@ cd automation-ease
 
 Abra o arquivo index.html no seu navegador.
 
-##Como Contribuir
+## Como Contribuir
 Faça um fork deste repositório.
 Crie uma nova branch (git checkout -b feature-nome).
 Faça as alterações desejadas e commit (git commit -am 'Adiciona nova feature').
 Envie para o repositório (git push origin feature-nome).
 Abra um Pull Request para revisar suas alterações.
 
-##Licença
+## Licença
 Este projeto é de código aberto e disponível sob a Licença MIT.
